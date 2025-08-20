@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Disease Prediction</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>❤️ Heart Disease Prediction ❤️</h1>
+    <form id="heartForm">
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="RestingBP">Resting BP</label>
+        <input type="number" id="RestingBP" placeholder="e.g., 120" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Cholesterol">Cholesterol</label>
+        <input type="number" id="Cholesterol" placeholder="e.g., 200" required>
+      </div>
+
+      <div class="form-group">
+        <label for="FastingBS">Fasting Blood Sugar</label>
+        <input type="number" id="FastingBS" placeholder="0 or 1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="RestingECG">Resting ECG</label>
+        <select id="RestingECG">
+          <option value="1">Normal</option>
+          <option value="2">ST</option>
+          <option value="3">LVH</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="MaxHR">Max Heart Rate</label>
+        <input type="number" id="MaxHR" placeholder="e.g., 150" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ExerciseAngina">Exercise Induced Angina</label>
+        <select id="ExerciseAngina">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Oldpeak">Oldpeak</label>
+        <input type="number" step="any" id="Oldpeak" placeholder="e.g., 1.2" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ST_Slope">ST Slope</label>
+        <select id="ST_Slope">
+          <option value="1">Down</option>
+          <option value="2">Flat</option>
+          <option value="3">Up</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Sex_M">Sex</label>
+        <select id="Sex_M">
+          <option value="1">Male</option>
+          <option value="0">Female</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="chestPain">Chest Pain Type</label>
+        <select id="chestPain">
+          <option value="ASY">ASY</option>
+          <option value="ATA">ATA</option>
+          <option value="NAP">NAP</option>
+          <option value="TA">TA</option>
+        </select>
+      </div>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <h3 id="result"></h3>
+  </div>
+</body>
+</html>
