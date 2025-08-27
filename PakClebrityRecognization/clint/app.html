@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Famous Personality Classifier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dropzone.min.css">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="icon" type="image/png" href="./images/abdul_qadeer.jpeg">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#">PAkistan Famous Personality Classifier Model</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col card-wrapper" data-player="abdul_qadeer">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/abdul_qadeer.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Abdul Qadeer</h4>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="col card-wrapper" data-player="babar_azam">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/babar_azam.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Babar Azam</h4>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="col card-wrapper" data-player="imran_khan">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/imran_khan.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Imran Khan</h4>
+                    </div>
+                </div>
+            </div>          
+
+            <div class="col card-wrapper" data-player="quaid_azam">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/quaid_azam.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Quaid Azam</h4>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <form action="/file-upload" class="dropzone" id="dropzone">
+                            <div class="dz-message needsclick">
+                                <img src="./upload.png" width="50vw" height="50vw"><br>
+                                <span class="note needsclick">Drop files here or click to upload</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3 mx-auto">
+                        <button id="submitBtn" type="button" class="btn btn-success">Classify</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-8 error" id="error" >
+                <p>Can't classify image. Classifier was not able to detect face and two eyes properly</p>    
+            </div>
+
+            <div class="col-sm-4" id="resultHolder">
+            </div>
+            <div class="col-sm-4" id="divClassTable">
+                <table id="classTable">
+                    <tr>
+                        <th>Person</th>
+                        <th>Probability Score</th>
+                    </tr>
+                    <tr>
+                        <td>Abdul Qadeer</td>
+                        <td id="score_abdul_qadeer"></td>
+                    </tr>
+                    <tr>
+                        <td>Babar Azam</td>
+                        <td id="score_babar_azam"></td>
+                    </tr>
+                    <tr>
+                        <td>Imran Khan</td>
+                        <td id="score_imran_khan"></td>
+                    </tr>
+                    <tr>
+                        <td>Quaid Azam</td>
+                        <td id="score_quaid_azam"></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./dropzone.min.js"></script>
+<script src="./app.js"></script>
+</html>
