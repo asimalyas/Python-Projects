@@ -1,90 +1,67 @@
-# 🏠 Bangalore House Price Prediction
+# 🚀 Machine Learning Projects Portfolio  
 
-![House Prediction](https://img.shields.io/badge/Status-Completed-brightgreen)
+Welcome to my **Machine Learning Projects** collection!  
+This repository showcases different ML models with **Flask backend**, **clean UI**, and **data-driven predictions**.  
 
-A **regression model** for predicting house prices in Bangalore using Python, Flask, and data preprocessing techniques.
+---
 
-## Features
-- Data cleaning & preprocessing
-- Feature engineering for better model accuracy
-- Regression model to predict house prices
-- Web-based interface with **Flask** backend
-- Frontend built with **HTML, CSS, and JavaScript**
+## ✨ Projects Overview  
 
-## Dataset
-Includes key features:
-- `Location`, `Size`, `TotalSqft`, `Bath`, `Balcony`, `Price`
+### 🏠 1. Bangalore House Prediction (Regression Model)  
+📌 **Description:**  
+A regression-based ML model that predicts **house prices in Bangalore** using various features.  
 
-## Tech Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+⚡ **Tech Stack:**  
+`Python` | `Flask` | `Pandas` | `JavaScript` | `HTML` | `CSS`  
 
-## Installation
-```bash
-git clone https://github.com/asimalyas/BangaloreHousePrediction.git
-cd BangaloreHousePrediction
-pip install -r requirements.txt
-python app.py
+🎯 **Category:** Machine Learning (Regression)  
 
+
+---
+
+### 🌟 2. Celebrity Recognition (Classification Model)  
+📌 **Description:**  
+An **SVM-based classification model** for recognizing **celebrities from images** using **OpenCV + Wavelet transforms**.  
+
+⚡ **Tech Stack:**  
+`Python` | `OpenCV` | `Wavelet` | `Flask` | `HTML` | `CSS`  
+
+🎯 **Category:** Machine Learning (Classification)  
 
 
 
-# 🎭 Celebrity Recognition
+---
 
-![Celebrity Recognition](https://img.shields.io/badge/Status-Completed-brightgreen)
+### ❤️ 3. PCA : Heart Disease Prediction (Classification Model)  
+📌 **Description:**  
+A **Random Forest model** to predict heart disease probability based on **patient health data**.  
 
-An **SVM-based classification model** for recognizing celebrities using OpenCV and Wavelet transforms.
+🔍 **Key Features Used:**  
+- Age, Sex, ChestPainType  
+- RestingBP, Cholesterol, FastingBS  
+- RestingECG, MaxHR, ExerciseAngina  
+- Oldpeak, ST_Slope, HeartDisease  
 
-## Features
-- Image-based celebrity recognition
-- Feature extraction using **wavelet transforms**
-- Real-time face recognition via webcam
-- Flask-based web deployment
+⚡ **Tech Stack:**  
+`Python` | `Flask` | `JavaScript` | `HTML` | `CSS` | `Random Forest`  
 
-## Tech Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-## Installation
-```bash
-git clone https://github.com/asimalyas/CelebrityRecognition.git
-cd CelebrityRecognition
-pip install -r requirements.txt
-python app.py
+🎯 **Category:** Machine Learning (Classification)  
 
 
 
-# ❤️ Heart Disease Prediction
+---
 
-![Heart Disease](https://img.shields.io/badge/Status-Completed-brightgreen)
+## 🎥 Demo Preview (Animated)  
 
-A **Random Forest classification model** for predicting heart disease based on tabular data.
+<p align="center">
+  <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="400px" alt="ML Animation"/>
+</p>  
 
-## Features
-- Data cleaning & preprocessing
-- Feature engineering on:
-  `Age`, `Sex`, `ChestPainType`, `RestingBP`, `Cholesterol`, `FastingBS`, `RestingECG`, `MaxHR`, `ExerciseAngina`, `Oldpeak`, `ST_Slope`, `HeartDisease`
-- Backend with **Flask**
-- Frontend using **HTML, CSS, and JavaScript**
-- Real-time prediction via web interface
+---
 
-## Tech Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![RandomForest](https://img.shields.io/badge/RandomForest-4B8BBE?style=for-the-badge)
+## 🛠️ Installation & Setup  
 
-## Installation
-```bash
-git clone https://github.com/asimalyas/HeartDiseasePrediction.git
-cd HeartDiseasePrediction
-pip install -r requirements.txt
-python app.py
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/ML-Projects.git
+   cd ML-Projects
